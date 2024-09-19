@@ -7,6 +7,7 @@
 !go.mod
 !README.md
 !.gitignore
-!story/story.go
+!internal/story/story.go
 !cmd/cyoaweb/cyoaweb.go
 !cmd/cyoacli/cyoacli.go
+!template.html

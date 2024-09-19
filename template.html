@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Choose Your Own Adventure(CYOA)</title>
 </head>
 <body>
-$END$
+    <h1>{{.Title}}</h1>
+    {{range .Story}}
+        <p>{{.}}</p>
+    {{end}}
+    <ul>
+        {{range .Options}}
+            <li><a href="/{{.Chapter}}">{{.Text}}</a></li>
+        {{end}}
+    </ul>
 </body>
 </html>
